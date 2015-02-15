@@ -29,6 +29,7 @@ UIAlertView     *alert;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.screenName = @"OaxacaPantalla1";
     [self initController];
     [self postService];
 }
@@ -36,6 +37,11 @@ UIAlertView     *alert;
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.screenName = @"OaxacaPantalla1";
 }
 
 - (void)initController

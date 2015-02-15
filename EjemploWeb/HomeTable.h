@@ -10,7 +10,8 @@
 #import <Accounts/Accounts.h>
 #import <Social/Social.h>
 #import <Twitter/Twitter.h>
-@interface HomeTable : UIViewController
+#import "GAITrackedViewController.h"
+@interface HomeTable : GAITrackedViewController <UITableViewDelegate,UITableViewDataSource,UIAlertViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UILabel *lblSelectedName;
 - (IBAction)btnSharePressed:(id)sender;
